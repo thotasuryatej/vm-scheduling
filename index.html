@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Machine Learning Approach for Efficient Task Scheduling in Fog Computing Environments</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>A Machine Learning Approach for Efficient Task Scheduling in Fog Computing Environments</h1>
+
+        <h2>VM Scheduling Algorithm Testing Results</h2>
+
+        <!-- Buttons for different algorithms -->
+        <div class="buttons">
+            <button class="button" onclick="showResult('fcfs')">FCFS Scheduling</button>
+            <button class="button" onclick="showResult('roundRobin')">Round Robin Scheduling</button>
+            <button class="button" onclick="showResult('sjf')">Shortest Job First Scheduling</button>
+            <button class="button" onclick="showResult('pbkms')">PBKMS Scheduling</button>
+        </div>
+
+        <!-- Algorithm Result Sections (hidden by default) -->
+        <div id="fcfs" class="result">
+            <h3>FCFS Scheduling</h3>
+            <p><strong>Makespan:</strong> 52962</p>
+            <p><strong>Speedup:</strong> 1.041</p>
+            <p><strong>Efficiency:</strong> 0.520</p>
+            <h4>Task Assignment:</h4>
+            <pre>{1: 0, 2: 10, 3: 50, 4: 90, 5: 130}</pre>
+        </div>
+
+        <div id="roundRobin" class="result">
+            <h3>Round Robin Scheduling</h3>
+            <p><strong>Makespan:</strong> 52962</p>
+            <p><strong>Speedup:</strong> 1.02</p>
+            <p><strong>Efficiency:</strong> 0.45</p>
+            <h4>Task Assignment:</h4>
+            <pre>{1: 0, 2: 12, 3: 25, 4: 45, 5: 60}</pre>
+        </div>
+
+        <div id="sjf" class="result">
+            <h3>Shortest Job First Scheduling</h3>
+            <p><strong>Makespan:</strong> 52300</p>
+            <p><strong>Speedup:</strong> 1.05</p>
+            <p><strong>Efficiency:</strong> 0.52</p>
+            <h4>Task Assignment:</h4>
+            <pre>{1: 0, 2: 5, 3: 20, 4: 45, 5: 70}</pre>
+        </div>
+
+        <div id="pbkms" class="result">
+            <h3>PBKMS Scheduling</h3>
+            <p><strong>Makespan:</strong> 51800</p>
+            <p><strong>Speedup:</strong> 1.10</p>
+            <p><strong>Efficiency:</strong> 0.55</p>
+            <h4>Task Assignment:</h4>
+            <pre>{1: 0, 2: 8, 3: 18, 4: 40, 5: 55}</pre>
+        </div>
+
+        <!-- Graph Image Section -->
+        <div id="graphContainer" class="graph">
+            <h4>Scheduling Algorithm Graph</h4>
+            <img id="graphImage" src="images/graph.png.jpeg" alt="Graph of Scheduling Algorithms">
+        </div>
+    </div>
+
+    <script src="js/scripts.js"></script>
+</body>
+</html>
